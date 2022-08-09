@@ -1,4 +1,4 @@
-# vengadores-v1
+# vengadores
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/juansim87/vengadores-v1.git
+git remote add origin https://gitlab.com/juansim87/vengadores.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/juansim87/vengadores-v1/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/juansim87/vengadores/-/settings/integrations)
 
 ## Collaborate with your team
 
