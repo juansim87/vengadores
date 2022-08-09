@@ -1,0 +1,43 @@
+.aside {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-color: silver;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 40px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: black;
+  &:hover {
+    transform: scale(1.2);
+    text-shadow: 2px 2px 5px red;
+  }
+
+  img {
+    width: 30px;
+    margin-right: 10px;
+      }
+
+  p {
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,127 @@
+.simulador{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.imgur.com/zhZLm3T.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: rgb(254, 197, 90);
+  margin-bottom: 100px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.squad {
+  //
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  .option {
+  height: 175px;
+  width: 125px;
+  }
+}
+
+.hero {
+  height: 175px;
+  width: 125px;
+  background-image: url(https://i.imgur.com/EJPf9vv.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  img {
+    height: 175px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+.threaten {
+  display:flex;
+    margin-left: 200px;
+
+}
+.villain {
+  height: 300px;
+  width: 185.5px;
+  background-image: url(https://i.imgur.com/2BB4Cvh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: center;
+  img {
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+.button {
+  appearance: none;
+  background-color: rgb(254, 197, 90);
+  border-radius: 40em;
+  border-style: none;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #000000;
+  transform: scale(1.125);
+  color: rgb(254, 197, 90);
+}
+
+.button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+.select {
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: rgb(254, 197, 90);
+  padding: 2px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  outline:0;
+}

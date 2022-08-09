@@ -1,0 +1,31 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 85vw;
+  background-image: url(../../../assets/images/background/home-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.title {
+  height: 300px;
+  margin-bottom: 40px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.subtitle {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: rgb(252, 255, 57);
+  text-shadow: 5px 5px 10px rgb(1, 1, 1)
+}

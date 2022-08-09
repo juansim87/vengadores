@@ -1,0 +1,120 @@
+<body class="editor">
+  <h1 class="title">Vengadores... reuníos</h1>
+  <div class="panel">
+    <form
+      novalidate
+      class="hero-doc"
+      [formGroup]="characterForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <label for="name">Nombre</label>
+      <input type="text" id="name" formControlName="name" class="input" />
+      <div
+        *ngIf="
+          !characterForm.get('name')?.valid &&
+          (characterForm.get('name')?.dirty || submitted)
+        "
+      >
+        <p class="warning">Mínimo 6 caracteres</p>
+      </div>
+      <label for="alterEgo">Álter Ego</label>
+      <input
+        type="text"
+        id="alterEgo"
+        formControlName="alterEgo"
+        class="input"
+      />
+      <div
+        *ngIf="
+          !characterForm.get('alterEgo')?.valid &&
+          (characterForm.get('alterEgo')?.dirty || submitted)
+        "
+      >
+        <p class="warning">Mínimo 6 caracteres</p>
+      </div>
+      <label for="image">URL de Imagen</label>
+      <input type="text" id="image" formControlName="image" class="input" />
+      <label for="description">Descripción</label>
+      <input
+        type="text"
+        id="description"
+        formControlName="description"
+        class="input"
+      />
+      <div
+        *ngIf="
+          !characterForm.get('description')?.valid &&
+          (characterForm.get('description')?.dirty || submitted)
+        "
+      >
+        <p class="warning">20 a 100 caracteres</p>
+      </div>
+      <label for="strength">Fuerza</label>
+      <input
+        type="number"
+        id="strength"
+        formControlName="strength"
+        class="input"
+      />
+      <div
+        *ngIf="
+          !characterForm.get('strength')?.valid &&
+          (characterForm.get('strength')?.dirty || submitted)
+        "
+      >
+        <p class="warning">Valores entre 1 y 12</p>
+      </div>
+      <label for="intelligence">Inteligencia</label>
+      <input
+        type="number"
+        id="intelligence"
+        formControlName="intelligence"
+        class="input"
+      />
+      <div
+        *ngIf="
+          !characterForm.get('intelligence')?.valid &&
+          (characterForm.get('intelligence')?.dirty || submitted)
+        "
+      >
+        <p class="warning">Valores entre 1 y 12</p>
+      </div>
+
+      <label for="speed">Velocidad</label>
+      <input type="number" id="speed" formControlName="speed" class="input" />
+      <div
+        *ngIf="
+          !characterForm.get('speed')?.valid &&
+          (characterForm.get('speed')?.dirty || submitted)
+        "
+      >
+        <p class="warning">Valores entre 1 y 12</p>
+      </div>
+      <button
+        [ngClass]="{ block: characterForm.invalid }"
+        type="submit"
+        class="button"
+        [disabled]="!characterForm.valid"
+      >
+        Contratar
+      </button>
+
+      <button *ngIf="characterID !== ''" (click)="fire()" class="button">
+        Despedir
+      </button>
+    </form>
+    <figure class="hero-doc">
+      <div class="hero">
+        <img src="{{ newCharacter.image }}" alt="{{ newCharacter.name }}" />
+        <h2>{{ newCharacter.name }}</h2>
+        <h3>{{ newCharacter.alterEgo }}</h3>
+        <p>"{{ newCharacter.description }}"</p>
+        <div class="stats">
+          <p>F: {{ newCharacter.strength }}</p>
+          <p>I: {{ newCharacter.intelligence }}</p>
+          <p>V: {{ newCharacter.speed }}</p>
+        </div>
+      </div>
+    </figure>
+  </div>
+</body>

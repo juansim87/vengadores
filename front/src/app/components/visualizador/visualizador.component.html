@@ -1,0 +1,17 @@
+<section class="visualizador">
+  <h1 class="title">Héroes en activo</h1>
+  <div class="panel">
+    <figure *ngFor="let character of heroSquad" class="hero-doc">
+      <div class="hero">
+        <h3>#{{ character.id }}</h3>
+        <img src="{{ character.image }}" alt="{{ character.name }}" />
+        <h2>{{ character.name }}</h2>
+        <h3>{{ character.alterEgo }}</h3>
+        <p>"{{ character.description }}"</p>
+        <button (click)="catchCharacter(character)" class="button">
+          Actualizar datos
+        </button>
+      </div>
+    </figure>
+  </div>
+</section>

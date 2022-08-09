@@ -1,0 +1,14 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Proyecto vengadores",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "author": "Juan Simón Abad",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

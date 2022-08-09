@@ -1,0 +1,18 @@
+<body class="simulador">
+  <h1 class="title">Simulador de combate</h1>
+  <form novalidate [formGroup]="characterForm">
+    <select formControlName="heroOption" class="select">
+      <option value="" disabled selected hidden>Elige tu héroe</option>
+      <option *ngFor="let character of callCharacterList" value="{{character.id}}" placeholder="Elige a tus héroes">{{character.name}}</option>
+    </select>
+  </form>
+  <div class="panel">
+    <div class="squad">
+       <div class="hero" *ngFor="let character of selectedCharacterList" (click)="deleteSelectedCharacter(character.id)"><img src="{{character.image}}" alt=""></div>
+    </div>
+    <button type="submit" class="button">¡AL ATAQUE!</button>
+    <div class="threaten">
+      <div class="villain"><img src="https://i.imgur.com/HtH6oL9.png" alt=""></div>
+    </div>
+  </div>
+</body>

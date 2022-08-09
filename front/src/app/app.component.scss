@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: silver;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.parent {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.parent > div {
+  flex: 1;
+}
+
+.menu {
+  height: 100%;
+  width: 20%;
+}
+
+.router {
+  height: 100%;
+  width: 100%;
+}

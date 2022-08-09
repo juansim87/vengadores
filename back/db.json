@@ -1,0 +1,86 @@
+{
+  "character": [
+    {
+      "name": "Capitán Españita",
+      "alterEgo": "Pepe Gutiérrez",
+      "image": "https://i.imgur.com/sgmr3Cj.png",
+      "description": "El campeón de la rojigualda, un poco corto de miras, pero entregado y patriótico.",
+      "strength": 8,
+      "intelligence": 7,
+      "speed": 7,
+      "id": 1
+    },
+    {
+      "name": "Deadpool",
+      "alterEgo": "Wade Wilson",
+      "image": "https://i.imgur.com/cG214bH.png",
+      "description": "¿Por qué estoy aquí cuando podría estar haciéndome unas chimichangas? ¿Y tú qué miras? ¡Pervertido!",
+      "strength": 9,
+      "intelligence": 6,
+      "speed": 6,
+      "id": 2
+    },
+    {
+      "name": "Papa Rabioso",
+      "alterEgo": "Homero Simón",
+      "description": "¡HOMER APLASTA! ¡HOMER DESTRUYE! Dos perritos calientes, por favor.",
+      "strength": 13,
+      "intelligence": 1,
+      "speed": 8,
+      "image": "https://i.imgur.com/zoZHzZe.png",
+      "id": 3
+    },
+    {
+      "name": "Señor Rarito",
+      "alterEgo": "Estéfano Rarito",
+      "description": "Capaz de crear alteraciones en el multiverso sacándote los cuernos. Siempre sale mal.",
+      "strength": 3,
+      "intelligence": 15,
+      "speed": 6,
+      "image": "https://i.imgur.com/8P3j00I.png",
+      "id": 4
+    },
+    {
+      "name": "Ojete de Topo",
+      "alterEgo": "Hans Moleman",
+      "image": "https://i.imgur.com/a3lenAr.png",
+      "description": "Apunta como el culo, pero le pone ganas",
+      "strength": 4,
+      "intelligence": 5,
+      "speed": 9,
+      "id": 5
+    },
+    {
+      "name": "Madevolyk",
+      "alterEgo": "Juan Simón Abad",
+      "image": "https://i.imgur.com/9OYqTNW.png",
+      "description": "A un hombre con un martillo todo le parece un clavo",
+      "strength": 1,
+      "intelligence": 1,
+      "speed": 1,
+      "id": 6
+    }
+  ],
+  "villain": [
+    {
+      "name": "Cagalera Roja",
+      "alterEgo": "Juan Sobera",
+      "description": "Rojo e irritado. Y no estamos hablando solo de su rostro.",
+      "strength": 10,
+      "intelligence": 20,
+      "speed": 14,
+      "image": "https://i.imgur.com/3KBScww.png",
+      "id": 50
+    },
+    {
+      "name": "Magento",
+      "alterEgo": "Máximo Estaño",
+      "description": "El compañero de piso perfecto para acercarte la sartén... si no fuera un fundamentalista de los superpoderes.",
+      "strength": 18,
+      "intelligence": 25,
+      "speed": 14,
+      "image": "https://i.imgur.com/HtH6oL9.png",
+      "id": 51
+    }
+  ]
+}
